@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="stilus.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <main style="display: flex; justify-content: center; gap: 30px;">
+
+    <!-- Játékosnév bekérés -->
+    <aside>
+      <section id="jatekosok">
+        <label>1. játékos (X): <input type="text" id="nev1" placeholder="Játékos 1 neve"></label><br><br>
+        <label>2. játékos (O): <input type="text" id="nev2" placeholder="Játékos 2 neve"></label><br><br>
+        <button id="inditas">Játék indítása</button>
+      </section>
+    </aside>
+
+    <!-- Játék tábla -->
+    <div id="tabla-container">
+      <section id="tabla">
+        <!-- 9 mező -->
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+        <div class="mezo"><p></p></div>
+      </section>
+    </div>
+
+    <!-- Állapot kijelzés -->
+    <article>
+      <section id="allapot">
+        <p id="aktualisAllapot">Add meg a neveket és indítsd a játékot!</p>
+        <button id="ujJatek" style="display:none;">Új játék</button>
+      </section>
+    </article>
+
+  </main>
+
+
+ 
+  
+</body>
+</html>
