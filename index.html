@@ -7,21 +7,17 @@
   <script type="module" src="main.js"></script>
 </head>
 <body>
-  <h1>Tic-Tac-Toe</h1>
+  <header>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="jatekosnevek">
+      <span>X játékos: <input type="text" id="nev1" placeholder="Játékos 1"></span>
+      <span>O játékos: <input type="text" id="nev2" placeholder="Játékos 2"></span>
+      <button id="inditas">Játék indítása</button>
+    </div>
+  </header>
 
-  <main style="display: flex; justify-content: center; gap: 30px;">
-
-    <!-- Játékosnév bekérés -->
+  <main>
     <aside>
-      <section id="jatekosok">
-        <label>1. játékos (X): <input type="text" id="nev1" placeholder="Játékos 1 neve"></label><br><br>
-        <label>2. játékos (O): <input type="text" id="nev2" placeholder="Játékos 2 neve"></label><br><br>
-        <button id="inditas">Játék indítása</button>
-      </section>
-    </aside>
-
-    <!-- Játék tábla -->
-    <div id="tabla-container">
       <section id="tabla">
         <!-- 9 mező -->
         <div class="mezo"><p></p></div>
@@ -34,20 +30,19 @@
         <div class="mezo"><p></p></div>
         <div class="mezo"><p></p></div>
       </section>
-    </div>
+    </aside>
 
-    <!-- Állapot kijelzés -->
     <article>
       <section id="allapot">
-        <p id="aktualisAllapot">Add meg a neveket és indítsd a játékot!</p>
+        <h2>Játék állapota</h2>
+        <ul id="uzenetek">
+          <li>Add meg a játékosneveket, majd indítsd a játékot.</li>
+        </ul>
         <button id="ujJatek" style="display:none;">Új játék</button>
       </section>
     </article>
-
   </main>
 
-
- 
-  
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

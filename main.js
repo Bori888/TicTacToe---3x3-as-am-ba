@@ -1,5 +1,5 @@
-import { jatekInditasa } from "./fuggvenyek.js";
+import { jatekInditasa } from './fuggvenyek.js';
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   jatekInditasa();
 });
